@@ -1,0 +1,34 @@
+/*NAVIGATION*/
+.navbar {
+  background-color: #d2ede9!important;
+  border-bottom: 1px #177365 solid;
+}
+
+/*MAIN SECTION*/
+main {
+  padding-top: 60px;
+}
+
+/*CUSTOM BUTTONS*/
+.button-green {
+  border: 1px solid #7ac9bd;
+  background-color: #ffffff;
+  color: #161112;
+}
+.button-green:hover,
+.button-green:focus,
+.button-green:active {
+  border: 1px solid #7ac9bd;
+  background-color: #7ac9bd;
+  color: #ffffff;
+}
+
+/*FOOTER*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #bce4de!important;
+}

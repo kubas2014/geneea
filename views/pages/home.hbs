@@ -1,0 +1,55 @@
+<main class="container mt-3 text-center">
+
+  <h1 class="">Geneea Text Analytics Demo</h1>
+
+
+  <div class="row">
+
+    <div class="col-md mt-3">
+
+      <h3>Your text</h3>
+
+      <form action="/analyze" method="POST">
+        <div class="form-group">
+          <textarea type="text" name="text" class="form-control" rows="3" placeholder="your text"></textarea>
+        </div>
+
+        <div class="text-center">
+          <button class="btn button-green">Analyze</button>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="col-md mt-3">
+
+      <h3>Results</h3>
+
+      <div class="table-responsive">
+        <table class="table table-borderless">
+
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Standard Form</th>
+              <th scope="col">Type</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {{#each entities}}
+            <tr>
+              <td>{{id}}</td>
+              <td>{{stdForm}}</td>
+              <td>{{type}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+</main>
